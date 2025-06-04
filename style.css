@@ -14,6 +14,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #1c1c1c;
+    background-color: #fdfdfd;
+    font-size: 1.6rem;
+    line-height: 1.6;
 }
 
 :root {
@@ -27,7 +31,6 @@ html {
     font-size: 62.5%;
     color: var(--text-color);
 }
-
 section {
     min-height: 100vh;
     /* min-width: 100; */
@@ -231,6 +234,8 @@ p {
 .navbar a {
     position: relative;
     transition: 0.3s;
+    color: #7c7c7c;
+
 }
 
 .navbar a.active::after {
@@ -306,6 +311,13 @@ p {
 .home_c {
     margin-left: 5rem;
 }
+h1, .home_c h1{
+    font-size: 5.6rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: none; /* remove all-caps if present */
+    color: #222;
+}
 
 .home_c h3 {
     font-size: 3.7rem;
@@ -365,7 +377,9 @@ span {
     transition: 0.3s ease;
 }
 .navbar .home-btn{
-    color: var(--sndbg-color);
+    /* color: var(--sndbg-color); */
+    color: #7c7c7c;
+
 }
 
 .button:hover {
