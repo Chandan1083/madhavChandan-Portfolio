@@ -671,8 +671,8 @@ span {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3,1fr);
+    gap: 4rem;
 }
 
 .project-card {
@@ -700,7 +700,7 @@ span {
 .project-image {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .project-info {
@@ -709,7 +709,7 @@ span {
 
 .project-title {
     font-size: 2.25rem;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.3rem; */
     color: #2d3748;
 }
 
@@ -1024,15 +1024,18 @@ body {
         z-index: 999;
     }
     nav.navbar{
-        background: #707070;
+        background: #fff;
     }
     .navbar a {
         display: block;
         padding: 17px;
         font-size: 22px;
         margin: 5px 0;
+        color: #333;
     }
-
+    .navbar .home-btn{
+        color: #333;
+    }
     .navbar.active {
         right: 0;
     }
@@ -1161,16 +1164,20 @@ body {
         background: var(--main-color);
         transition: all 0.5s ease;
         z-index: 999;
+        
     }
-
+    .navbar .home-btn{
+        color: #333;
+    }
     .navbar a {
         display: block;
         padding: 17px;
         font-size: 22px;
         margin: 5px 0;
+        color: #333;
     }
     nav.navbar{
-        background: #707070;
+        background: #ffffff;
     }
     .navbar.active {
         right: 0;
@@ -1244,7 +1251,8 @@ body {
     
     .services_c .service_box {
         flex: 0 0 90%;
-        /* height: 350px; */
+        width: 80%;
+        height: auto;
     }
     
     .container1 {
@@ -1345,7 +1353,10 @@ body {
         right: 0;
     }
     nav.navbar{
-        background: #707070;
+        background: #ffffff;
+    }
+    .navbar .home-btn{
+        color: #333;
     }
     
     .logo {
@@ -1436,9 +1447,11 @@ body {
     
     .services_c .service_box {
         flex: 0 0 100%;
-        height: fit-content;
+        /* height: fit-content; */
         margin: 10px 0;
         padding: 1rem;
+        width: 80%;
+        height: auto;
     }
 
     .container1 {
@@ -1529,12 +1542,16 @@ body {
 @media (min-width: 1025px) {
   .navbar {
     display: flex;
-    /* display: none; */
   }
 }
 
 @media (max-width: 1024px) {
   .navbar {
     display: flex;
+    background-color: #f4f4f4;
+  }
+  .navbar a{
+    color: #333;
   }
 }
+
